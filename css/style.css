@@ -1,34 +1,84 @@
 body {
+  margin: 0;
+  padding: 0;
 
   }
 
 /****************   Nav Section **********************/
-nav {
-	
-}
+nav.container-nav{
+  background-color: Cornsilk;
+  border-bottom: 2px solid #ddd;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);  
+} 
+
+
 
 /***********************  Footer Section   **************************/
-footer {
-	
+footer.container-footer {
+  background-color: lightgray;
+  border-top: 5px solid #000;    
+  border-bottom: 5px solid #000; 
+  margin: 10px 0;
+  padding: 10px;
+
+
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  gap:20px;
+  font-family: verdana;
 }
+  
+	
+
 
 /*********** Splash Page ************************/
 header {
+  background-color: azure; 
+  padding: 50px 20px;
+  text-align: center;
+    
+  }
 
-}
+
 
 header h1 {
-  
+  font-family: "Oswald", sans-serif;
+  color: #2e7d32;
+  font-size: 3rem;
+  font-weight: 650;
+  font-style: normal;
 }
+  
+
 
 header img {
+  border:4px solid black;
+  border-radius:60%;
+  margin: 20px auto;
+  display:block;
 }
 
 .address {
+  font-family: "Bungee", sans-serif;
+  text-align:center;
+  color: grey;
+  font-size: 0.8rem;
+  margin-top: 10px;
  
 }
 
 .tagline {
+  font-family: "Oswald", sans-serif;
+  text-align:center;
+  color:red;
+  text-transform: uppercase;
   
 }
 
@@ -38,54 +88,91 @@ hr {
 }
 
 section h3 {
+  font-family: "Bungee", sans-serif;
+  color: #008B8B;
+  font-weight: 400;
+  font-style: normal;
   
 }
 
 section dl {
+  display: grid;
+  grid-template-columns: 150px 1fr; 
+  align-items: center;
+ 
+  
   
 }
 
 section ul {
+  list-style-type: circle;
 
 }
 
 section a {
+  color: hotpink;
+  text-decoration: none;
+  
+
 
 }
 
 section a:hover {
+  color: blue;
+  
+
 }
 
 /**************   Projects   *****************/
 .three-col {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+
 	
 }
 
 .card img {
+  border-radius: 8px 8px 0 0;
+
+
 
 }
 
 .card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px
   
 }
 
 /**************   Responsiveness   *****************/
 @media (max-width: 680px) {
     nav {
+      flex-direction: column;
+      align-items: center;
       
     }
 
     .three-col {
+      grid-template-columns: 1fr;
       
     }
 }
 
 /**************   Contact Page   *****************/
 .one-col {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+
 
 }
 
 input {
+  width: 100%;           
+  padding: 10px;
+
   
 
 }
